@@ -1,0 +1,20 @@
+/*
+ Creation of database.
+*/
+CREATE DATABASE DBLAB;
+
+
+/*
+ Creation of tables.
+*/
+CREATE TABLE Paper_details (paper_id VARCHAR(20), paper_title VARCHAR(50), paper_type ENUM('conference', 'journal'), publication DATE);
+CREATE TABLE Paper_author (paper_id VARCHAR(20), author_id VARCHAR(20));
+c.CREATE TABLE Author_details (author_id VARCHAR(20), author_type ENUM('student', 'faculty'));
+CREATE TABLE Student_details(student_id VARCHAR(20), student_name VARCHAR(20), student_institute VARCHAR(30), department VARCHAR(30), DOB DATE, research_area VARCHAR(30));
+CREATE TABLE Faculty_details(faculty_id VARCHAR(20), faculty_name VARCHAR(30), faculty_institute VARCHAR(30), department VARCHAR(30), DOB DATE, research_area VARCHAR(30));
+CREATE TABLE Supervisor(faculty_id VARCHAR(20), student_id VARCHAR(20));
+
+
+/*
+ Creation of database.
+*/
